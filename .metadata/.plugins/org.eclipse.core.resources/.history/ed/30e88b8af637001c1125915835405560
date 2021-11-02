@@ -1,0 +1,38 @@
+package 백준;
+
+import java.util.Scanner;
+
+public class 백준_1987 {
+	static int r,c;
+	static char[][] board;
+	static int[] ch = new int[26];//알파벳 중복 체크용 A=65
+	static int[] dy = {0,1,0,-1};
+	static int[] dx = {-1,0,1,0};
+	
+	public void solution(int x, int y) {
+		
+		
+		
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		백준_1987 T = new 백준_1987();
+		Scanner kb = new Scanner(System.in);
+		r = kb.nextInt();
+		c = kb.nextInt();
+		board = new char[r+1][c+1];
+		for(int i=1; i<r+1; i++) {
+			for(int j=1; j<c+1; j++) {
+				board[i][j] = kb.next().charAt(0);
+			}
+		}
+		T.solution(1, 1);
+		board[1][1] = 'A';
+		ch[(int)board[1][1] - 65] = 1;
+		System.out.println((ch[1]);
+	}
+
+}
