@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:test #요거 해주면 데이터베이스 굳이 없어도 test할 수 있음
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+  # show_sql: true
+        format_sql: true
+
+logging.level:
+  org.hibernate.SQL: debug
+# org.hibernate.type: trace
